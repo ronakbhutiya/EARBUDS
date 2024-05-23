@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-boxs;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(40deg, #2fbeb4 50%, #24404c 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container {
+  max-width: 134.4rem;
+  margin: 0 3.2rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  border-bottom: 0.1px solid #d3d1d1;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
+}
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 0.5px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-size: 240%;
+}
+.nav__link:hover,
+.nav__link:active {
+  background-position: 100%;
+  background-image: linear-gradient(40deg, #2fbeb4 50%, #24404c 50%);
+  /* color: #2fbeb4;
+  border-bottom: 0.5px solid #2fbeb4; */
+}
+
+.logo {
+  padding-left: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+.logo__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+  height: 100%;
+  align-items: center;
+  margin-right: 2rem;
+}
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+.heading {
+  font-size: 8rem;
+  color: #fff;
+  margin-top: 10rem;
+}
+.text-box {
+  padding-left: 3rem;
+}
+.text {
+  font-size: 1.8rem;
+  color: #d3d1d1;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+.btn {
+  padding: 1.4rem 3.5rem;
+  background-color: #24404c;
+  color: #fff;
+  border-radius: 8rem;
+  margin: 7rem 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2fbeb4;
+  }
+}
+.flex {
+  gap: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.earbuds__img {
+  width: 100%;
+  padding-right: 2rem;
+}
+@media (max-width: 75em) {
+  .container {
+    max-width: 102.4rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 46.75em) {
+  .flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  .btn {
+    margin: 2rem 0;
+  }
+  .nav {
+    display: none;
+  }
+  .heading {
+    margin-top: 4rem;
+  }
+  .earbuds__img {
+    width: 65%;
+    margin-bottom: 3rem;
+  }
+  .logo {
+    padding-left: 2rem;
+  }
+  .text-box {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 22.63em) {
+  html {
+    font-size: 45%;
+  }
+  .logo__box {
+    gap: 1rem;
+  }
+}
+@media (max-width: 17.19em) {
+  html {
+    font-size: 35%;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
